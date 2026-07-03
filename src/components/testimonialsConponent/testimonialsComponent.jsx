@@ -13,7 +13,7 @@ function CustomerTestimonials(props){
         <div>
             <div className={`${style.container} ${show ? style.big : ""}`}>
                 <div className={style.photoAndName}>
-                    <img className={style.customerPhoto} src={props.img} alt="" />
+                    <img className={style.customerPhoto} src={props.img} alt="img" />
                     <div className={style.nameAndStars}>
                         <h4>{props.name}</h4>
                         <i className="fa-solid fa-star"></i>

@@ -10,7 +10,7 @@ function Contact() {
   const isHome = location.pathname === "/"
   useEffect(() => {
     setShow(true);
-  });
+  }, [])
 
 
   const {
@@ -107,7 +107,7 @@ function Contact() {
               <p>restaurant12212@gmail.com</p>
             </div>
             <div className={style.map}>
-                <img src="https://biographypoints.com/bio_content/uploads/2023/10/Dasht-Kharan.webp" alt="" />
+                <img src="https://biographypoints.com/bio_content/uploads/2023/10/Dasht-Kharan.webp" alt="map" />
             </div>
         </div>
       </div>

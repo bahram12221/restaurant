@@ -1,7 +1,6 @@
 import style from "./menu.module.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import Navbar from "../../components/Navbar";
 import { useLocation } from "react-router-dom";
 
 function Menu() {
@@ -20,7 +19,7 @@ function Menu() {
   useEffect(() => {
     setShow(true);
     setShowModal(true);
-  });
+  }, []);
 
   const [breakfastCard, setBreakfastCard] = useState([]);
   const [launch, setLaunch] = useState([]);
@@ -146,7 +145,7 @@ function Menu() {
         >
           {breakfastCard.map((food) => (
             <div key={food.id} className={style.card}>
-              <img src={food.imgUrl} alt="" />
+              <img src={food.imgUrl} alt="breakfast" />
               <div className={style.info}>
                 <div className={style.namePrice}>
                   <h2>{food.foodName}</h2>
@@ -172,7 +171,7 @@ function Menu() {
         >
           {launch.map((food) => (
             <div onClick={modal} key={food.id} className={style.card}>
-              <img src={food.imgUrl} alt="" />
+              <img src={food.imgUrl} alt="lunch" />
               <div className={style.info}>
                 <div className={style.namePrice}>
                   <h2>{food.foodName}</h2>
@@ -196,7 +195,7 @@ function Menu() {
         >
           {diner.map((food) => (
             <div onClick={modal} key={food.id} className={style.card}>
-              <img src={food.imgUrl} alt="" />
+              <img src={food.imgUrl} alt="dinner" />
               <div className={style.info}>
                 <div className={style.namePrice}>
                   <h2>{food.foodName}</h2>

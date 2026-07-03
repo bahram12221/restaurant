@@ -11,7 +11,7 @@ function Services() {
 
   useEffect(() => {
     setShow(true);
-  });
+  }, []);
 
   return (
     <div className={style.container}>

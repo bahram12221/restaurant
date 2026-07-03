@@ -1,6 +1,5 @@
 import style from "./navbar.module.css"
 import logo from "../img/logo.png"
-import { Link } from "react-router-dom"
 import { useLocation } from "react-router-dom"
 import { NavLink } from "react-router-dom"
 import { useState, useEffect } from "react"
@@ -20,7 +19,7 @@ function Navbar(){
     return(
         <div>
             <div className={`${style.parent} ${isPage ? style.bgColor : ""}`}>
-              <img className={style.img} src={logo} alt="" />
+              <img className={style.img} src={logo} alt="logo" />
 
 
               <div className={`${style.bars} ${show ? style.hidden : ""} ${close ? style.flex : ""}`}><i onClick={() => {setShow(true); setClose(false)}} className="fa-solid fa-bars"></i></div>

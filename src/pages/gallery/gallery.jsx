@@ -17,7 +17,7 @@ function Gallery() {
 
      useEffect(() => {
         setShow(true)
-     })
+     }, [])
 
   return (
     <div className={style.container}>
@@ -29,7 +29,7 @@ function Gallery() {
       </div>
       <div className={style.photos}>
         {images.map((img, index) => (
-          <img key={index} src={img} />
+          <img key={index} src={img} alt="gallery" />
         ))}
       </div>
     </div>

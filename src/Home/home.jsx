@@ -27,7 +27,7 @@ useEffect(() => {
                     <Link to="/book"><p className={style.book}>BOOK A TABLE</p></Link>
                 </div>
                 <div className={style.right}>
-                    <img className={style.img} src={food} alt="" />
+                    <img className={style.img} src={food} alt="ff" />
                 </div>
                 
             </div>

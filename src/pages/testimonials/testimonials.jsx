@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar";
 import CustomerTestimonials from "../../components/testimonialsConponent/testimonialsComponent";
 import style from "./testimonials.module.css";
 import { useState, useEffect } from "react";
@@ -19,7 +18,7 @@ function Testimonials() {
 
   useEffect(() => {
     setShow(true);
-  });
+  }, []);
 
   return (
     <div className={style.container}>

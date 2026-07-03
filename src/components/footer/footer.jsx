@@ -1,4 +1,3 @@
-import Navbar from "../Navbar"
 import style from "./footer.module.css"
 import { NavLink } from "react-router-dom"
 
