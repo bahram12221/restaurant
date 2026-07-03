@@ -103,7 +103,7 @@ function Contact() {
                 <p>+93734 567 890</p>
             </div>
             <div className={style.email}>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
               <p>restaurant12212@gmail.com</p>
             </div>
             <div className={style.map}>
