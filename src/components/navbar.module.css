@@ -1,0 +1,124 @@
+.parent {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.img {
+  width: 100px;
+  color: white;
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 85%;
+}
+
+.bars, .xmark{
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .ul {
+    flex-direction: column;
+    width: 20%;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 10px;
+    z-index: 1000;
+    display: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px white;
+  }
+  .parent {
+    justify-content: space-between;
+  }
+  .img {
+    width: 100px;
+    height: 80px;
+    color: orange;
+  }
+
+  .xmark {
+  color: red;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.bars {
+  color: white;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.bars:hover {
+  color: orange;
+}
+.xmark {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  transition: all 1s ease;
+}
+.bgColor{
+ 
+  background-color: rgba(2, 3, 3, 0) !important;
+}
+
+}
+
+
+
+
+
+.showNav {
+  visibility: visible;
+}
+
+.ul li a {
+  padding: 5px 20px;
+  color: white;
+}
+
+.ul li a:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+.bgColor {
+  background-color: rgb(4, 4, 39);
+}
+
+
+.activeLink {
+  background-color: orange;
+}
+
+@media (max-width: 767px){
+    .ul{
+        width: 30%;
+        font-size: 14px;
+    }
+    .bgColor{
+      background-color: none;
+    }
+}

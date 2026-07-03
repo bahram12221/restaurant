@@ -1,0 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Chelsea+Market&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+.aboutUs{
+    background-image: url(../../img/meat.png);
+    background-color: black;
+    background-blend-mode: hard-light;
+    padding: 70px;
+    text-align: center;
+    color: white;
+    font-family: Arimo;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.welcome{
+    margin: auto;
+    border-bottom: 3px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.introdaction{
+    margin: auto;
+    background-color: rgb(102, 88, 88);
+    padding: 0px 30px 30px;
+    border-radius: 5px;
+    
+
+}
+
+.who{
+    color: lightgray;
+}
+
+.introText{
+    border-left: 3px solid orange;
+    padding-left: 10px;
+    width: 40%;
+    margin: 0;
+}
+
+
+.ourStory{
+    margin: auto;
+    width: 60%;
+    margin: auto;
+}
+
+
+.h1{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.show{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+
+.story{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.imgText{
+    display: flex;
+    width: 60%;
+    margin: auto;
+
+}
+
+
+.parent{
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+
+.imgs{
+    width: 40%;
+}
+
+.img{
+    width: 40%;
+    margin: 10px;
+}
+
+.text{
+    width: 20%;
+    border-left: 3px solid orange;
+    padding-left: 10px;
+    color: black;
+}
+
+
+.big{
+   opacity: 0;
+   transform: scale(0.6);
+   animation: popIn 0.8s ease forwards;
+}
+
+@keyframes popIn {
+    0%{
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.cards{
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.card1, .card2, .card3, .card4{
+    display: inline-block;
+    width: 35%;
+    margin: 10px;
+    border-left: 3px solid orange;
+    padding-left: 10px;
+    
+    
+    
+}
+
+
+
+.chefs{
+    height: 80vh;
+    text-align: center;
+}
+
+.chefsParent{
+     display: flex;
+     justify-content: space-between;
+     width: 90%;
+     margin: auto;
+}
+
+.one, .two, .three{
+    width: 30%;
+    text-align: center;
+    padding: 30px 0 50px;
+    height: 330px;
+    transition: all 1s;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+}
+
+
+
+.chefsParent div img{
+    width: 80%;
+    height: 260px;
+    border-radius: 50%;
+    
+    
+}
+
+.chefsParent div p{
+    color: black;
+}
+
+.icons{
+    margin: 40px auto 0 ;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.7s ease;
+    transform: translateY(-100%);
+    
+
+}
+
+.icons i{
+    background-color: orange;
+    border-radius: 50% 50% 0 0;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.one:hover, .two:hover, .three:hover{
+    height: 400px;
+    .icons{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    
+}
+
+.chefs h1{
+    margin:40px auto;
+    border-bottom: 3px solid orange;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.container{
+        padding-top: 100px;
+    }
+
+@media(max-width: 1023px){
+    .welcome{
+        font-size: 25px;
+    }
+    .introdaction{
+        width: 60%;
+    }
+    .text{
+        width: 40%;
+    }
+    .img{
+        width: 80%;
+    }
+    .imgs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card1, .card2, .card3, .card4{
+        font-size: 12px;
+    }
+    .container{
+        padding-top: 0 !important;
+    }
+
+    .chefs{
+        height: 130vh;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .chefsParent{
+        width: 100%;
+    }
+    .one, .two, .three{
+        width: 200px;
+        padding: 0;
+        margin: auto;
+    }
+
+    .one{
+        position: absolute;
+        top: 140px;
+        left: 15%;
+    }
+    .two{
+        position: absolute;
+        top: 140px;
+        right: 15%;
+    }
+    .three{
+        position: absolute;
+        top: 530px;
+        left: 15%;
+    }
+    .one:hover, .two:hover, .three:hover{
+        height: 360px;
+    }
+    .chefsParent div img{
+        width: 160px;
+        height: 160px;
+        padding-top: 20px;
+    }
+    .one h2, .two h2, .three h2{
+        font-size: 20px;
+    }
+
+    .icons i{
+        font-size: 12px;
+        padding: 5px;
+    }    
+}
+
+@media(max-width: 767px){
+    .welcome{
+        font-size: 20px;
+    }
+    .who{
+        font-size: 17px;
+    }
+    .introText{
+        font-size: 12px;
+    }
+    .ourStory{
+        font-size: 20px;
+    }
+    .imgs{
+        width: 60%;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .card1, .card2, .card3, .card4{
+        font-size: 10px;
+    }
+    .chefs{
+        height: 180vh;
+        position: relative;
+    }
+    .chefs h1{
+        font-size: 20px;
+    }
+
+    .one{
+        left: 30%;
+        margin: 0;
+    }
+    .two{
+        top: 520px;
+        left: 30%;
+        margin: 0;
+    }
+    .three{
+        top: 900px;
+        left: 30%;
+        margin: 0;
+    }
+}

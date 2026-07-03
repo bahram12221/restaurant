@@ -1,0 +1,45 @@
+{"lanch":[
+    {
+        "id": 1,
+        "imgUrl": "./launch1.png",
+        "foodName": "Salad",
+        "price": "16",
+        "foodInfo": "Tender grilled meats, fresh vegetables, and delicious recipes prepared with quality ingredients."
+    },
+    {
+        "id": 2,
+        "imgUrl": "./launch3.png",
+        "foodName": "Meat",
+        "price": "20",
+        "foodInfo": "Grilled meats, fresh salads, and flavorful side dishes carefully prepared for a satisfying midday meal."
+    },
+     {
+        "id": 3,
+        "imgUrl": "./launch1.png",
+        "foodName": "Salad",
+        "price": "16",
+        "foodInfo": "Tender grilled meats, fresh vegetables, and delicious recipes prepared with quality ingredients."
+    },
+      {
+        "id": 4,
+        "imgUrl": "./launch3.png",
+        "foodName": "Meat",
+        "price": "20",
+        "foodInfo": "Grilled meats, fresh salads, and flavorful side dishes carefully prepared for a satisfying midday meal."
+    },
+     {
+        "id": 5,
+        "imgUrl": "./launch1.png",
+        "foodName": "Salad",
+        "price": "16",
+        "foodInfo": "Tender grilled meats, fresh vegetables, and delicious recipes prepared with quality ingredients."
+    },
+      {
+        "id": 6,
+        "imgUrl": "./launch3.png",
+        "foodName": "Meat",
+        "price": "20",
+        "foodInfo": "Grilled meats, fresh salads, and flavorful side dishes carefully prepared for a satisfying midday meal."
+    }
+   
+]}

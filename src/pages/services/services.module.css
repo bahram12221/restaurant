@@ -1,0 +1,120 @@
+.services{
+    background-image: url(../../img/meat.png);
+    background-color: black;
+    background-blend-mode: hard-light;
+    padding: 70px;
+    text-align: center;
+    color: white;
+    font-family: Arimo;
+    
+}
+
+.container{
+    padding-top: 100px;
+}
+
+.hidden{
+    display: none;
+}
+
+.h1{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.show{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.h1{
+    margin: auto;
+}
+
+.parent{
+    width: 85%;
+    margin: 0 auto 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.cards{
+    margin: auto;
+}
+
+.card{
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: orange;
+    transform: translateY(-5%);
+}
+.card:hover i{
+    color: #fff;
+    
+}
+.card:hover p{
+    color: #fff;  
+}
+
+h2{
+    display: inline-block;
+    margin:0 auto 20px;
+}
+
+.card p{
+   margin: 0;
+    text-align: left;
+    color: rgb(66, 66, 66);
+    transition: all 0.5s ease;
+}
+
+.card div i{
+    color: orange;
+    font-size: 40px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.exp{
+    width: 350px;
+    margin: 50px auto;
+    border-bottom: 3px solid orange;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+@media(max-width: 1023px){
+    .container{
+        padding-top: 0;
+    }
+
+    .parent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        font-size: 14px;
+    }
+    .card p{
+        width: 100%;
+    }
+    
+}
+@media(max-width: 767px){
+    .parent{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .exp{
+        font-size: 20px;
+        width: 250px;
+    }
+}

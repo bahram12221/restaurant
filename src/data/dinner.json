@@ -1,0 +1,46 @@
+{"dinner":[
+    {
+        "id": 1,
+        "imgUrl": "./kabab1.png",
+        "foodName": "Kabab",
+        "price": "20",
+        "foodInfo": "Premium steaks, seafood specialties, and chef-crafted dishes served with rich flavors and elegant presentation."
+    },
+    {
+        "id": 2,
+        "imgUrl": "./sandwich1.png",
+        "foodName": "Sandwich",
+        "price": "18",
+        "foodInfo": "Signature dishes, premium ingredients, and rich flavors crafted for an unforgettable evening meal."
+    },
+     {
+        "id": 3,
+        "imgUrl": "./kabab2.png",
+        "foodName": "Kabab",
+        "price": "20",
+        "foodInfo": "Premium steaks, seafood specialties, and chef-crafted dishes served with rich flavors and elegant presentation."
+    },
+     {
+        "id": 4,
+        "imgUrl": "./pizza1.png",
+        "foodName": "Pizza",
+        "price": "18",
+        "foodInfo": "Signature dishes, premium ingredients, and rich flavors crafted for an unforgettable evening meal."
+    },
+     {
+        "id": 5,
+        "imgUrl": "./sandwich2.png",
+        "foodName": "Sandwich",
+        "price": "17",
+        "foodInfo": "Premium steaks, seafood specialties, and chef-crafted dishes served with rich flavors and elegant presentation."
+    },
+     {
+        "id": 2,
+        "imgUrl": "./pizza2.png",
+        "foodName": "Pizza",
+        "price": "18",
+        "foodInfo": "Signature dishes, premium ingredients, and rich flavors crafted for an unforgettable evening meal."
+    }
+    
+   
+]}

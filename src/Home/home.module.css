@@ -1,0 +1,96 @@
+.container{
+    height: 100vh;
+    background-image: url("../img/bg.png");
+    background-color: rgb(34, 34, 34);
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+
+.right{
+    width: 50%;
+    text-align: center;
+}
+
+.img{
+    width: 60%;
+    animation: spin 20s infinite linear;
+}
+
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.left{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 1s all ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+}
+
+.h1{
+    color: white;
+    font-size: 50px;
+    
+}
+
+.p{
+    width: 50%;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.book{
+    width: 20%;
+    padding: 20px;
+    background-color: rgba(238, 195, 4, 0.795);
+    color: white;
+    margin: 0;
+}
+
+.show{
+    transform: translateX(0%);
+    opacity: 1;
+
+}
+
+@media(max-width: 1023px) and (min-width: 768px){
+    .h1{
+        font-size: 30px;
+    }
+
+    .book{
+        font-size: 12px;
+        width: 90px;
+    }
+    .p{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 767px){
+    .book{
+        font-size: 10px;
+    }
+    .parent{
+        flex-direction: column-reverse;
+    }
+    .h1{
+        font-size: 25px;
+    }
+}

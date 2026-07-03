@@ -1,0 +1,75 @@
+.testimonials{
+    background-image: url(../../img/meat.png);
+    background-color: black;
+    background-blend-mode: hard-light;
+    padding: 70px;
+    text-align: center;
+    color: white;
+}
+
+.container{
+    padding-top: 100px;
+}
+
+.h1{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.showText{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+.explanaton{
+    width: 40%;
+    margin-top: 40px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.hTestimonials{
+   padding: 10px;
+   border-bottom: 3px solid orange;
+   width: 385px;
+   border-radius: 10px;
+   margin:50px auto;
+
+}
+
+.block{
+    display: block;
+}
+
+@media(max-width: 1023px){
+    .container{
+        padding-top: 0;
+    }
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 767px){
+    .hTestimonials{
+        font-size: 20px;
+        width: 250px;
+    }
+    .explanaton{
+        font-size: 10px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 10px;
+    }
+
+}

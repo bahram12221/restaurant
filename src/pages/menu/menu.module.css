@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Chelsea+Market&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  font-family: Poppins;
+}
+
+.container{
+  padding-top: 100px;
+}
+
+.menu{
+    background-image: url(../../img/meat.png);
+    background-color: black;
+    background-blend-mode: hard-light;
+    padding: 70px;
+    text-align: center;
+    color: white;
+}
+
+.hidden{
+  display: none;
+}
+
+.h1{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.showText{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+
+.card img {
+  width: 100%;
+}
+
+.card {
+  width: 70%;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+.card:hover{
+  box-shadow: 0 0 20px blue;
+}
+
+.card button:hover{
+  cursor: pointer;
+}
+
+.info {
+  padding: 10px 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.namePrice h2 {
+  margin: 0;
+}
+
+.namePrice {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info p {
+  text-align: left;
+  color: rgb(27, 27, 27);
+}
+
+.info button {
+  width: 40%;
+  background-color: orange;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.info button:hover {
+  transform: translatey(-10%);
+
+  box-shadow: 0 0 10px blue;
+}
+
+.breakfast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  z-index: 1;
+  position: absolute;
+  
+}
+
+.lanch {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  z-index: 2;
+  position: absolute;
+  visibility: hidden;
+}
+
+.dinner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  z-index: 3;
+  position: absolute;
+  visibility: hidden;
+}
+
+
+.menuNav {
+    height: 50px;
+}
+
+.menuUl {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  list-style-type: none;
+  width: 40%;
+  background-color: gray;
+  margin: auto;
+  height: 100%;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menuUl li{
+    cursor: pointer;
+}
+
+.menuUl i{
+    color: orange;
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+
+.show{
+    visibility: visible;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+
+.ech1:active, .ech2:active, .ech3:active{
+  background-color: rgb(70, 192, 13);
+  border-radius: 10px;
+}
+
+
+
+.menuContainer{
+  background-image: url(../../img/rebg.png);
+  background-color: rgb(0, 0, 0);
+  background-blend-mode: hard-light;
+  height: 1400px;
+}
+
+.modal{
+  width: 30%;
+  position: fixed;
+  bottom: 90%;
+  left: 5%;
+  background-color: white;
+  z-index: 4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(31, 30, 30);
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 1s ease;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+
+.showmodal{
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+
+
+.imgg{
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  direction: rtl;
+  padding: 10px;
+}
+
+.imgg i{
+  font-size: 20px;
+}
+
+.imgg i:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.hidden{
+  opacity: 0;
+}
+.modal p{
+  color: black;
+}
+
+.modal h2, h3{
+  margin: 10px 20px;
+}
+
+
+.quantity{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.quantity button{
+  width: 15%;
+}
+.quantity button:hover{
+  cursor: pointer;
+}
+
+.totlePrice{
+  display: block;
+}
+
+.order{
+  margin: 20px 35% 0;
+  background-color: rgb(94, 197, 10);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+
+.successfullyMessage{
+    color: white;
+    background-color: green;
+    width: 40%;
+    text-align: center;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    padding: 10px 0;
+    z-index: 4;
+    opacity: 0;
+}
+
+.showMessage{
+  opacity: 1;
+  
+}
+
+.hiddenMessage{
+  visibility: hidden;
+  transition: all 3s ease;
+}
+
+@media(max-width: 1023px){
+    .container{
+        padding-top: 0;
+    }
+
+    .menuUl{
+      width: 60%;
+      font-size: 14px;
+      padding-bottom: 0;
+    }
+    .menuUl li i{
+      font-size: 25px;
+    }
+    .breakfast, .lanch, .dinner{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+      width: 80%;
+    }
+    .info p{
+      width: 100%;
+      height: 130px;
+    }
+    .imgg{
+      height: 170px;
+    }
+    .modal p{
+     font-size: 14px;
+    }
+    .modal h3{
+      font-size: 14px;
+    }
+    .menuContainer{
+      height: 2000px;
+    }
+    
+}
+
+@media(max-width: 767px){
+    .menuUl{
+      width: 80%;
+      font-size: 10px;
+    }
+    .menuUl li i{
+      font-size: 20px;
+    }
+    .menuNav{
+      height: 25px;
+    }
+    .info{
+      font-size: 9px;
+      height: 140px;
+    }
+    .info button{
+      font-size: 10px;
+      width: 100px;
+    }
+    .menuContainer{
+      height: 1400px;
+    }
+    .imgg{
+      height: 100px;
+    }
+    .modal h3{
+      font-size: 9px;
+    }
+    .modal h2{
+      font-size: 15px;
+    }
+    .modal p{
+      font-size: 12px;
+    }
+
+    .quantity button{
+      padding: 0;
+    }
+    .order{
+      font-size: 10px;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      margin-top: 0px;
+    }
+    .quantity{
+      margin-top: 10px;
+    }
+    .imgg i{
+      font-size: 15px;
+    }
+}
