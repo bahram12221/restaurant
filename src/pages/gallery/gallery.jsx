@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar";
 import style from "./gallery.module.css"
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
