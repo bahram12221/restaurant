@@ -134,7 +134,7 @@ function Menu() {
               <i class="fa-solid fa-burger"></i>Lanch
             </li>
             <li className={style.ech3} onClick={Dinner}>
-              <i class="fa-solid fa-utensils"></i>Dinner
+              <i className="fa-solid fa-utensils"></i>Dinner
             </li>
           </ul>
         </div>

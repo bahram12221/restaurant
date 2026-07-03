@@ -7,7 +7,7 @@ function CustomerTestimonials(props){
 
     useEffect(() => {
         setShow(true)
-    })
+    }, [])
 
     return(
         <div>
