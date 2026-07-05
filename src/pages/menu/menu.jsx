@@ -3,14 +3,12 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+
 function Menu() {
   const [activeModal, setActiveModal] = useState(false);
   const location = useLocation()
   const isHome = location.pathname === "/"
-  function modal() {
-    setActiveModal(true);
-  }
-
+  
   const [show, setShow] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [closeModal, setCloseModal] = useState(false);
@@ -154,7 +152,7 @@ function Menu() {
                 <p>{food.foodInfo}</p>
                 <button
                   onClick={() => {
-                    modal();
+                    setActiveModal(true);
                     setSelectCard(food);
                     setCloseModal(false);
                     setSuccessfully(false);
@@ -170,7 +168,7 @@ function Menu() {
           className={`${style.lanch} ${lanch ? style.show : ""} ${breakfast ? style.hidden : ""} ${dinner ? style.hidden : ""}`}
         >
           {launch.map((food) => (
-            <div onClick={modal} key={food.id} className={style.card}>
+            <div onClick={setActiveModal(true)} key={food.id} className={style.card}>
               <img src={food.imgUrl} alt="lunch" />
               <div className={style.info}>
                 <div className={style.namePrice}>
@@ -180,7 +178,7 @@ function Menu() {
                 <p>{food.foodInfo}</p>
                 <button
                   onClick={() => {
-                    modal();
+                    setActiveModal(true);
                     setSelectCard(food);
                     setCloseModal(false);
                     setSuccessfully(false);
@@ -194,7 +192,7 @@ function Menu() {
           className={`${style.dinner} ${dinner ? style.show : ""} ${breakfast ? style.hidden : ""} ${lanch ? style.hidden : ""}`}
         >
           {diner.map((food) => (
-            <div onClick={modal} key={food.id} className={style.card}>
+            <div onClick={setActiveModal(true)} key={food.id} className={style.card}>
               <img src={food.imgUrl} alt="dinner" />
               <div className={style.info}>
                 <div className={style.namePrice}>
@@ -204,7 +202,7 @@ function Menu() {
                 <p>${food.foodInfo}</p>
                 <button
                   onClick={() => {
-                    modal();
+                    setActiveModal(true);
                     setSelectCard(food);
                     setCloseModal(false);
                     setSuccessfully(false);

@@ -8,7 +8,6 @@ import Menu from "../pages/menu/menu";
 import Gallery from "../pages/gallery/gallery";
 import Testimonials from "../pages/testimonials/testimonials";
 import Contact from "../pages/contact/contact";
-import Footer from "../components/footer/footer";
 function Home(){
 const [show, setShow] = useState(false)
 

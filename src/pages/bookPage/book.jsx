@@ -1,6 +1,4 @@
-import Navbar from "../../components/Navbar";
 import style from "./book.module.css";
-import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser"
 import { useForm } from "react-hook-form"
 

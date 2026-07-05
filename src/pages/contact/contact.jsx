@@ -16,7 +16,7 @@ function Contact() {
   const {
       register,
       handleSubmit,
-      formState: {errors, isValid},
+      formState: {errors},
       reset,
     } = useForm({
       mode: "onChange"
