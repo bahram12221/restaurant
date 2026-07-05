@@ -5,7 +5,6 @@ import { useLocation } from "react-router-dom";
 
 
 function Menu() {
-  const [activeModal, setActiveModal] = useState(false);
   const location = useLocation()
   const isHome = location.pathname === "/"
   
@@ -126,10 +125,10 @@ function Menu() {
         <div className={style.menuNav}>
           <ul className={style.menuUl}>
             <li className={style.ech1} onClick={Breakfast}>
-              <i class="fa-solid fa-mug-saucer"></i>Breakfast
+              <i className="fa-solid fa-mug-saucer"></i>Breakfast
             </li>
             <li className={style.ech2} onClick={Lanch}>
-              <i class="fa-solid fa-burger"></i>Lanch
+              <i className="fa-solid fa-burger"></i>Lanch
             </li>
             <li className={style.ech3} onClick={Dinner}>
               <i className="fa-solid fa-utensils"></i>Dinner
@@ -152,7 +151,7 @@ function Menu() {
                 <p>{food.foodInfo}</p>
                 <button
                   onClick={() => {
-                    setActiveModal(true);
+                 
                     setSelectCard(food);
                     setCloseModal(false);
                     setSuccessfully(false);
@@ -168,7 +167,7 @@ function Menu() {
           className={`${style.lanch} ${lanch ? style.show : ""} ${breakfast ? style.hidden : ""} ${dinner ? style.hidden : ""}`}
         >
           {launch.map((food) => (
-            <div onClick={setActiveModal(true)} key={food.id} className={style.card}>
+            <div  key={food.id} className={style.card}>
               <img src={food.imgUrl} alt="lunch" />
               <div className={style.info}>
                 <div className={style.namePrice}>
@@ -192,7 +191,7 @@ function Menu() {
           className={`${style.dinner} ${dinner ? style.show : ""} ${breakfast ? style.hidden : ""} ${lanch ? style.hidden : ""}`}
         >
           {diner.map((food) => (
-            <div onClick={setActiveModal(true)} key={food.id} className={style.card}>
+            <div  key={food.id} className={style.card}>
               <img src={food.imgUrl} alt="dinner" />
               <div className={style.info}>
                 <div className={style.namePrice}>
@@ -202,7 +201,7 @@ function Menu() {
                 <p>${food.foodInfo}</p>
                 <button
                   onClick={() => {
-                    setActiveModal(true);
+    
                     setSelectCard(food);
                     setCloseModal(false);
                     setSuccessfully(false);
