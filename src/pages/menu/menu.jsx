@@ -177,7 +177,7 @@ function Menu() {
                 <p>{food.foodInfo}</p>
                 <button
                   onClick={() => {
-                    setActiveModal(true);
+              
                     setSelectCard(food);
                     setCloseModal(false);
                     setSuccessfully(false);
