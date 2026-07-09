@@ -18,7 +18,7 @@ function Menu() {
     setShowModal(true);
   }, []);
 
-  const [breakfastCard, setBreakfastCard] = useState([]);
+  const [breakfastt, setBreakfastt] = useState([]);
   const [launch, setLaunch] = useState([]);
   const [diner, setDiner] = useState([]);
 
@@ -45,16 +45,19 @@ function Menu() {
   }
 
   useEffect(() => {
-    axios.get("http://localhost:1001/foods").then((result) => {
-      setBreakfastCard(result.data);
+    axios.get(`${"https://reataurant-api-1.onrender.com"}/foods`).then((result) => {
+      setBreakfastt(result.data);
     });
-    axios.get("http://localhost:10000/lanch").then((launch) => {
-      setLaunch(launch.data);
+    axios.get(`${"https://reataurant-api-1.onrender.com"}/lanch`).then((result) => {
+      setLaunch(result.data);
     });
-    axios.get("http://localhost:2000/dinner").then((dinner) => {
-      setDiner(dinner.data);
+    axios.get(`${"https://reataurant-api-1.onrender.com"}/dinner`).then((result) => {
+      setDiner(result.data);
     });
   }, []);
+
+ 
+  
 
   const [quantity, setQuantity] = useState(1);
   function addQuantity() {
@@ -140,7 +143,7 @@ function Menu() {
         <div
           className={`${style.breakfast} ${breakfast ? style.show : ""} ${lanch ? style.hidden : ""} ${dinner ? style.hidden : ""}`}
         >
-          {breakfastCard.map((food) => (
+          {breakfastt.map((food) => (
             <div key={food.id} className={style.card}>
               <img src={food.imgUrl} alt="breakfast" />
               <div className={style.info}>
@@ -196,9 +199,9 @@ function Menu() {
               <div className={style.info}>
                 <div className={style.namePrice}>
                   <h2>{food.foodName}</h2>
-                  <h3>{food.price}</h3>
+                  <h3>${food.price}</h3>
                 </div>
-                <p>${food.foodInfo}</p>
+                <p>{food.foodInfo}</p>
                 <button
                   onClick={() => {
     
