@@ -10,7 +10,7 @@ function Footer(){
                     <i style={{color:"lightgreen"}} className="fa-solid fa-leaf"></i>
                     <h2>FoodExpress</h2>
                     <ul>
-                        <li><i class="fa-solid fa-envelope"></i>  restaurant12212@gmail.com</li>
+                        <li><i className="fa-solid fa-envelope"></i>  restaurant12212@gmail.com</li>
                         <li><i className="fa-solid fa-phone"></i>  +93734 567 890</li>
                         <li><i className="fa-solid fa-location-dot"></i>  123 Restaurant Street, Downtown</li>
                     </ul>

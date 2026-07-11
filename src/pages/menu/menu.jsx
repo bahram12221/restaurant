@@ -56,6 +56,10 @@ function Menu() {
     });
   }, []);
 
+  
+  console.log(breakfastt[3]?.imgUrl);
+  
+
  
   
 
@@ -149,6 +153,7 @@ function Menu() {
               <div className={style.info}>
                 <div className={style.namePrice}>
                   <h2>{food.foodName}</h2>
+                  
                   <h3>${food.price}</h3>
                 </div>
                 <p>{food.foodInfo}</p>
@@ -164,6 +169,7 @@ function Menu() {
                 </button>
               </div>
             </div>
+            
           ))}
         </div>
         <div
