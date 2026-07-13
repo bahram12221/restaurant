@@ -330,6 +330,7 @@
     .info{
       font-size: 9px;
       height: 140px;
+      position: relative;
     }
     .info button{
       font-size: 10px;
@@ -353,6 +354,7 @@
 
     .quantity button{
       padding: 0;
+     
     }
     .order{
       font-size: 10px;
@@ -368,4 +370,13 @@
     .imgg i{
       font-size: 15px;
     }
+    .info button{
+      position: absolute;
+      bottom: 0px;
+      left: 14%;
+    }
+    
+}
+.card{
+  padding-bottom: 20px;
 }
