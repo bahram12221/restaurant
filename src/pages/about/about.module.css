@@ -328,17 +328,17 @@
     }
 
     .one{
-        left: 30%;
-        margin: 0;
+        left: 27%;
+        margin: a;
     }
     .two{
         top: 520px;
-        left: 30%;
+        left: 27%;
         margin: 0;
     }
     .three{
         top: 900px;
-        left: 30%;
+        left: 27%;
         margin: 0;
     }
 }
