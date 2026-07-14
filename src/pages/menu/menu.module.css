@@ -375,6 +375,9 @@
       bottom: 0px;
       left: 14%;
     }
+    .modal{
+      width: 50%;
+    }
     
 }
 .card{
