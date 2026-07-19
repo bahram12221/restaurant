@@ -21,7 +21,7 @@ function Book() {
        data,
       "U5lhFdQ2eB8RJ06ql"
     ).then(() => { 
-      alert("sended message successfully")
+      alert("message sent successfully")
       reset();
     }).catch((error) => {
       console.log(error);
